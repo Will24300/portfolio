@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS';
+    background-color: #081b29;
+    color: white;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: transparent;
+}
+.navLogo {
+    font-size: 18px;
+    padding: 20px 0px 0px 60px;
+}
+.navMenu {
+    display: flex;
+    padding: 20px;
+    
+}
+.navMenu a{
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: 17px;
+    position: relative;
+}
+.navMenu a::after{
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navMenu a:hover::after,
+.navMenu a.active{
+    width: 100%;
+    color: aqua;
+}
